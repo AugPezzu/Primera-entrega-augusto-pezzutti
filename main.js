@@ -1,4 +1,41 @@
-/* funciones */
+let resultado = 0
+let operacion = prompt("Listado de operaciones disponibles: \n 1 Sumar. \n 2 Restar. \n 3 Dividir. \n 4 Multiplicar. \n 5 Salir de la calculadora");
+
+function calculadora() {
+    while (operacion != "5") {
+        let numero1 = parseFloat(prompt("Ingrese el primer número"))
+        let numero2 = parseFloat(prompt("Ingrese el segundo número"))
+        switch (operacion) {
+            case "1":
+                resultado = numero1 + numero2
+                alert("El resultado es: " + resultado)
+                break;
+            case "2":
+                resultado = numero1 - numero2
+                alert("El resultado es: " + resultado)
+                break;
+            case "3":
+                resultado = numero1 / numero2
+                alert("El resultado es: " + resultado)
+                break;
+            case "4":
+                resultado = numero1 * numero2
+                alert("El resultado es: " + resultado)
+                break;
+            default:
+                alert("Números invalidos u operación invalida")
+                break;
+        }
+        operacion = prompt("Listado de operaciones disponibles: \n 1 Sumar. \n 2 Restar. \n 3 Dividir. \n 4 Multiplicar. \n 5 Salir de la calculadora");
+    }
+}
+
+calculadora()
+
+
+
+
+/* 
 function sumar(valor1, valor2){
     let resultado = valor1 + valor2
     return resultado
@@ -18,11 +55,8 @@ function multiplicar(valor1, valor2){
     let resultado = valor1 * valor2
     return resultado
 }
-/* Variables */
 let inicioPrograma = prompt("Menu princpial\n\n1-Sumar\n2-Restar\n3-Dividr\n4-Multipliar\n5-Salir")
 inicioPrograma = parseInt(inicioPrograma)
-
-
 if (inicioPrograma  == 1){
         let resultado
         let valorUsuario1 = prompt("Escriba su primer valor")
@@ -61,3 +95,5 @@ if (inicioPrograma  == 1){
 } else {
     alert("opcion invalida")
 }
+ */
+
